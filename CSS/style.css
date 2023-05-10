@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to top right, #0065fd, #00fdfd);
+}
+
+input{
+    font-size: 95%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Conteudo{
+    height: 70vh;
+    width: 30vw;
+    min-width: 200px;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 3%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff;
+    box-shadow: 6px 5px 4px 0px rgba(112, 112, 112, 0.5);
+}
+
+.Conteudo h1{
+    margin-bottom: 5vh;
+    position: top;
+    font-family: 'Lora';
+    border-bottom: 1px solid #000;
+}
+
+.field{
+    border-radius: 0.5vw ;
+    border-width: 1px;
+    height: 3.7vh;
+    background-color: transparent;
+    
+}
+
+.field:focus{
+
+    border-color:#0065fd;
+    box-shadow: 2px 5px 4px 0px rgba(112, 112, 112, 0.5);
+}
+
+.label{
+    font-size: small;
+}
+
+.label + .field{
+    margin-bottom: 1.5vh;
+}
+
+#genero{
+    border-bottom: 1px solid #000;
+}
+
+.radio{
+    border-color: #0065fd;
+    border-radius: 1px ;
+}
+.radio:hover{
+    cursor: pointer;
+}
+
+.genero{
+    padding-top: 1vh;
+}
+
+#botao{
+    font-family: 'Lora', serif;
+    margin-top: 2vh;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 1vw;
+    color: #fff;
+    background-color: #0065fd;
+    transition: all 0.3s;
+}
+
+#botao:hover{
+    cursor: pointer;
+    box-shadow: 2px 5px 4px 0px rgba(42, 42, 42, 0.5);
+    letter-spacing: 1px;
+}
+
+
+
+.modal-fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px); 
+
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    height: inherit;
+}
+
+/* CUSTOMIZANDO O MODAL */
+.modal{
+    position: absolute;
+    border-radius: 6PX;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px 5px 4px 0px rgba(40, 39, 39, 0.5);
+}
+
+.fundoIMG{
+    border-radius: 6px 6px 0 0;
+    align-items: center;
+    text-align: center;
+    display: grid;
+}
+
+.img_Modal{
+    margin: 2vh;
+    width: 80px;
+    justify-content: center;
+    text-align: center;
+    justify-self: center;
+
+}
+
+.h1_Modal{
+    font-family: 'Lora';
+    margin: 2vh 0 0 0;
+}
+
+.h2_Modal{
+    padding: 0 2vw;
+    color: #000;
+    font-size: smaller;
+    font-family: 'Montserrat';
+    margin: 0.5vh 0 3vh 0;
+}
+
+.p_Modal{
+    margin: 0 0 1vh 0;
+
+}
